@@ -1,10 +1,15 @@
 import React from 'react'
 
-export const ExpenseItem = () => {
+export const ExpenseItem = ({expense}) => {
+    const{id,charge,amount} = expense
+
     return (
-        <div>
-            
+        <li className='item'>
+        <div className='info'>
+            <span className='expense'>{charge}</span>
+            <span></span>
         </div>
+        </li>
     )
 }
 
