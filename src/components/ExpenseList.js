@@ -12,7 +12,7 @@ export const ExpenseList = ({
     <>
       <ul className="list">
         {expenses.map(expense => {
-          return <Item key={expense.id} expense={expense} handledelete={handleDelete} handleEdit={handleEdit} />;
+          return <Item key={expense.id} expense={expense} handleDelete={handleDelete} handleEdit={handleEdit} />;
         })}
       </ul>
       {expenses.length > 0 && (
